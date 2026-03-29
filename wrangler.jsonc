@@ -21,8 +21,6 @@
       "enabled": true
     }
   },
-
-/* 以下将在worker手动绑定
   "ai": {
     "binding": "AI",
     "remote": true
@@ -33,13 +31,16 @@
       "dataset": "sink"
     }
   ],
+
+/* 在
   "kv_namespaces": [
     {
       "binding": "KV",
-      "preview_id": "ef93d42dc4b34969bab404d2e80f8dd3",
-      "id": "ef93d42dc4b34969bab404d2e80f8dd3"
+      "preview_id": "YOUR_KV_DEV_ID",
+      "id": "YOUR_KV_ID"
     }
   ],
+*/
   "r2_buckets": [
     {
       "binding": "R2",
@@ -47,7 +48,6 @@
       "bucket_name": "sink" // IMPORTANT: Change this to your R2 bucket name, or create one with `wrangler r2 bucket create sink`
     }
   ],
-*/
 
   "triggers": {
     "crons": ["0 0 * * *"] // Run backup task daily at 00:00 UTC
