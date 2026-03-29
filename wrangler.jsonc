@@ -32,7 +32,7 @@
     }
   ],
 
-/* 手动在worker中绑定KV
+/* 手动绑定KV
   "kv_namespaces": [
     {
       "binding": "KV",
