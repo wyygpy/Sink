@@ -32,7 +32,7 @@
     }
   ],
 
-/* 手动绑定KV
+/* 请手动绑定KV 
   "kv_namespaces": [
     {
       "binding": "KV",
